@@ -1,0 +1,151 @@
+.slider {
+  font-family: "Poppins-Rg";
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  height: 200px;
+  @media (min-width: 768px) {
+    width: 80%;
+    height: 350px;
+  }
+  @media (min-width: 1024px) {
+    width: 70%;
+    height: 500px;
+  }
+  @media (min-width: 1300px) {
+    width: 60%;
+    height: 500px;
+  }
+  margin-top: 10px;
+  margin-inline: auto;
+
+  .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 200px 30px;
+    cursor: pointer;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.left-arrow {
+      left: 10px;
+      z-index: 999;
+      opacity: 0;
+    }
+
+    &.right-arrow {
+      right: 10px;
+      opacity: 0;
+    }
+  }
+
+  .slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+
+    &.active {
+      opacity: 1;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 175px;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      );
+      bottom: 6px;
+      border-radius: 10px;
+      color: white;
+      .headline-wrapper {
+        background-color: #bbbbbb60;
+        padding-inline: 3px;
+      }
+
+      h2 {
+        position: absolute;
+        font-family: "Poppins-Bd";
+        left: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        display: block;
+        position: absolute;
+        bottom: 15px;
+      }
+
+      p {
+        font-size: 1rem;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+      }
+    }
+  }
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+
+    &.active {
+      background-color: tomato;
+      width: 30px;
+      border-radius: 25px;
+    }
+  }
+}
+.rating_star img {
+  display: inlsine;
+  max-width: 1rem;
+  overflow: initial;
+}
+.heading-slider {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: tomato;
+  }
+}
+.sliderlink {
+  display: none;
+}
+.active-link {
+  display: initial;
+}

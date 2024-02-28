@@ -1,0 +1,39 @@
+.trailer-wrapper {
+  rotate: 90deg;
+  // height: 100%;
+  // width: 100%;
+
+  button {
+    margin: 16px;
+    z-index: 999;
+    position: absolute;
+  }
+
+  .youtube {
+    iframe {
+      // position: absolute;
+      // left: 185px;
+      // right: 0;
+      // bottom: 0;
+      // top: -185px;
+      width: 100vh;
+      height: 100vw;
+      z-index: 998;
+      margin-bottom: -4px;
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .trailer-wrapper {
+    rotate: 0deg;
+
+    .youtube {
+      iframe {
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

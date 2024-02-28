@@ -1,0 +1,64 @@
+/* ProfilePage.css */
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  .header-profile {
+    max-height: 40vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .profile-container {
+    padding: 0px;
+  }
+
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  .profile-content {
+    display: flex;
+    flex-direction: column; /* Ändern der Richtung auf Spalten */
+    align-items: center; /* Zentrieren der Elemente horizontal */
+  }
+
+  .profile-headline {
+    margin-top: -150px;
+    color: #fff;
+    font-family: "Poppins-Bd";
+    font-size: 2rem;
+  }
+  .profile-picture img {
+    margin-top: -70px;
+    border: solid 4px #fc2121;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px; /* Abstand zwischen Bild und Profilinformationen */
+  }
+
+  .profile-info {
+    padding: 0 40px;
+    font-size: 18px;
+    text-align: center; /* Zentrieren des Texts */
+  }
+
+  .profile-text {
+    font-family: "Poppins-Rg";
+  }
+  .profile-name {
+    font-family: "Poppins-Bd";
+    font-size: 1.7rem;
+    color: #fc2121;
+  }
+
+  /* Stile für vertikale Anordnung der Profilinformationen */
+  .profile-info h2,
+  .profile-info p {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}

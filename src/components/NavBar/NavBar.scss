@@ -1,0 +1,182 @@
+
+@media (min-width: 390px) {
+  .NavBar {
+    background-color: rgba(255, 255, 255, 0.534);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 8;
+  }
+  
+  .navImage {
+    width: 25px;
+    height: 25px;
+  
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .navLink {
+    font-size: 14px;
+    &.active .navImage {
+      filter: invert(33%) sepia(90%) saturate(7499%) hue-rotate(346deg)
+        brightness(101%) contrast(94%);
+    }
+  
+    .imageText {
+      font-size: 14px;
+    }
+  
+    .ellipseImage {
+      position: absolute;
+      left: 35px;
+    }
+  
+    .imageText {
+      position: absolute;
+      top: 27px;
+      padding-left: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #97aabd;
+    }
+    .imageText.active {
+      color: #fc2121;
+    }
+  
+    .navImage.active {
+      filter: invert(33%) sepia(90%) saturate(7499%) hue-rotate(346deg)
+        brightness(101%) contrast(94%);
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .NavBar {
+    background-color: rgba(255, 255, 255, 0.534);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 8;
+    
+  }
+  
+  .navImage {
+    width: 30px;
+    height: 30px;
+  
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .navLink {
+    font-size: 14px;
+    &.active .navImage {
+      filter: invert(33%) sepia(90%) saturate(7499%) hue-rotate(346deg)
+        brightness(101%) contrast(94%);
+    }
+  
+    .imageText {
+      font-size: 14px;
+    }
+  
+    .ellipseImage {
+      position: absolute;
+      left: 110px;
+    }
+  
+    .imageText {
+      position: absolute;
+      top: 27px;
+      padding-left: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #97aabd;
+    }
+    .imageText.active {
+      color: #fc2121;
+    }
+  
+    .navImage.active {
+      filter: invert(33%) sepia(90%) saturate(7499%) hue-rotate(346deg)
+        brightness(101%) contrast(94%);
+    }
+  }
+}
+
+
+
+
+@media (min-width: 1440px){
+  .NavBar {
+    background-color: rgba(255, 255, 255, 0.534);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 8;
+    
+  }
+  
+  .navImage {
+    width: 30px;
+    height: 30px;
+  
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .navLink {
+    font-size: 14px;
+    &.active .navImage {
+      filter: invert(33%) sepia(90%) saturate(7499%) hue-rotate(346deg)
+        brightness(101%) contrast(94%);
+    }
+  
+    .imageText {
+      font-size: 14px;
+    }
+  
+    .ellipseImage {
+      position: absolute;
+      left:110px;
+    }
+  
+    .imageText {
+      position: absolute;
+      top: 27px;
+      padding-left: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #97aabd;
+    }
+    .imageText.active {
+      color: #fc2121;
+    }
+  
+    .navImage.active {
+      filter: invert(33%) sepia(90%) saturate(7499%) hue-rotate(346deg)
+        brightness(101%) contrast(94%);
+    }
+  }
+
+  }
+
+  .dark{
+    .NavBar{
+      background-color: rgba(0, 0, 0, 0.236);
+    }
+  }

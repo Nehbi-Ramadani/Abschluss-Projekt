@@ -1,0 +1,45 @@
+.dark {
+  background-color: #2b2b2b;
+
+  .profile-text {
+    color: #fff;
+  }
+  .dark-mode-button {
+    background: #2b2b2b;
+  }
+  .carusel {
+    .switch-left,
+    .switch-right {
+      color: white;
+    }
+    .slide-netflix {
+      box-shadow: 0 4px 8px #ffffff80;
+      .sliderlink-netflix {
+        color: white;
+      }
+    }
+  }
+}
+.light {
+  .carusel {
+    .switch-left,
+    .switch-right {
+      color: black;
+    }
+    .slide-netflix {
+      box-shadow: 0 0 8px black;
+      .sliderlink-netflix {
+        color: black;
+      }
+    }
+  }
+}
+
+.dark-mode-button {
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  box-shadow: 1px 2px 6px #00000020;
+}

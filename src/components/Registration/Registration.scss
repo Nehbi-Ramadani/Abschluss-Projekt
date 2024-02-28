@@ -1,0 +1,224 @@
+.reg-section-wrapper {
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  position: relative;
+
+  .reg-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    height: 100vh;
+  }
+
+  .reg-section-registration {
+    background-color: #ffffffb1;
+    width: 100%;
+    max-height: 100vh;
+    transition: animation 1s ease-out;
+    padding: 16% 8% 16% 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    position: relative;
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+
+    .reg-login-logo {
+      width: 40vw;
+      margin-bottom: 20px;
+    }
+
+    .reg-registration-signin {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 70%;
+    }
+
+    .reg-login-headline {
+      color: #121212;
+      text-align: left;
+      margin-left: 2%;
+      margin-block: 1.875rem;
+      font-size: 0.8rem;
+      font-family: "Poppins-Rg";
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      padding-block: 8px;
+      text-decoration: none;
+      border-left: 2px solid #fc2121;
+      border-top: 2px solid #fc2121;
+      border-bottom: 2px solid #fc2121;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .reg-registration-headline {
+      color: #121212;
+      text-align: left;
+      margin-right: 2%;
+      margin-block: 1.875rem;
+      font-size: 0.8rem;
+      font-family: "Poppins-Rg";
+      text-align: center;
+      padding-block: 8px;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+      border-right: 2px solid #fc2121;
+      border-top: 2px solid #fc2121;
+      border-bottom: 2px solid #fc2121;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .reg-form-active {
+      background-color: #fc2121;
+      color: #fff;
+      font-family: "Poppins-Md";
+      // border-radius: 4px;
+    }
+
+    .reg-registration-form {
+      display: flex;
+      flex-direction: column;
+      margin-inline: 2%;
+      row-gap: 1.25rem;
+      width: 100%;
+
+      .reg-input {
+        font-family: "Poppins-Rg";
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        border: none;
+        font-size: 18px;
+        background-color: #fff;
+        color: #666666;
+      }
+
+      .reg-input:focus {
+        outline: 1px solid #fc2121;
+      }
+
+      .registration-button {
+        background-color: #fc2121;
+        padding: 1rem 1.5rem;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-size: 18px;
+        font-family: "Poppins-Bd";
+      }
+
+      .reg-informations {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+      }
+      .reg-remember-me {
+        color: #121212;
+        margin-right: 4px;
+      }
+      .reg-need-help {
+        margin-top: -12px;
+        color: #121212;
+        font-family: "Poppins-Rg";
+      }
+    }
+  }
+}
+
+@media (min-width: 620px) {
+  .reg-section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    position: relative;
+
+    .reg-background {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      z-index: 0;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .reg-section-registration {
+      margin: 0 auto;
+      background-color: #ffffff7c;
+      width: 70%;
+      max-height: 100%;
+      transition: animation 1s ease-out;
+      padding: 16% 8% 8% 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+      position: relative;
+      backdrop-filter: blur(10px);
+
+      .reg-login-logo {
+        width: 15vw;
+        margin-bottom: 20px;
+      }
+
+      // .reg-registration-signin {
+
+      // }
+
+      .reg-login-headline {
+      }
+
+      .reg-registration-headline {
+      }
+
+      .reg-form-active {
+        background-color: #fc2121;
+        // border-radius: 4px;
+      }
+      .reg-registration-form {
+        .reg-input {
+          font-family: "Poppins-Rg";
+          padding: 0.75rem 0.5rem;
+          border-radius: 5px;
+          border: none;
+          font-size: 14px;
+          background-color: #fff;
+          box-shadow: 2px 2px 5px #00000025;
+          // border-radius: 0px;
+          // color: #333;
+          // border-bottom: solid 1px #333;
+        }
+
+        .reg-input:focus {
+        }
+
+        .registration-button {
+          margin-top: 10px;
+        }
+
+        .reg-informations {
+        }
+        .reg-remember-me {
+          margin-top: -8px;
+          margin-right: 4px;
+        }
+        .reg-need-help {
+          margin-top: -8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,268 @@
+.movie-details {
+  padding-bottom: 64px;
+
+  .movie-details-top {
+    background-image: linear-gradient(to top, #ffffff00, #ffffff);
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .backdrop {
+      height: 50vh;
+      width: 100%;
+      object-fit: cover;
+      mask-image: linear-gradient(to top transparent white 45&);
+      -webkit-mask-image: linear-gradient(to top, transparent, white 35%);
+    }
+
+    .movie-details-headline {
+      margin-top: -72px;
+      &.dark {
+        color: #fff;
+        background-color: transparent;
+      }
+    }
+    h2 {
+      font-family: "Poppins-Bd";
+      font-size: 1.75rem;
+      color: #121212;
+      opacity: 1;
+      text-align: center;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      &.dark {
+        color: #fff;
+        background-color: transparent;
+      }
+    }
+    .features {
+      padding: 5vw 5vw;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      .save-download-wrapper {
+        display: flex;
+        gap: 16px;
+      }
+    }
+
+    .key-infos {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      &.dark {
+        color: #fff;
+        background-color: transparent;
+      }
+      ul {
+        display: flex;
+        gap: 24px;
+        li {
+          font-family: "Poppins-Rg";
+        }
+      }
+    }
+    p {
+      font-family: "Poppins-Rg";
+      font-size: 1rem;
+    }
+  }
+
+  .movie-details-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5vw;
+    margin-bottom: 48px;
+
+    &.dark {
+      color: #fff;
+      background-color: transparent;
+    }
+
+    .overview-text-closed {
+      font-family: "Poppins-Rg";
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      display: -webkit-box;
+    }
+    .overview-text-open {
+      font-family: "Poppins-Rg";
+      text-align: left;
+    }
+    h3 {
+      text-align: left;
+      font-family: "Poppins-Bd";
+      font-size: 1.25rem;
+      text-align: left;
+      width: 100%;
+    }
+    .inline-btn {
+      font-size: 1rem;
+      border: none;
+      background: none;
+      display: inline;
+      color: #fc2121;
+    }
+    span {
+      font-family: "Poppins-Bd";
+    }
+    .genres {
+      width: 100%;
+      font-family: "Poppins-Rg";
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .languages {
+      width: 100%;
+      font-family: "Poppins-Rg";
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .info-table {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .linkTo {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .movie-details {
+    padding-bottom: 64px;
+    .movie-details-top {
+      background-image: linear-gradient(to top, #ffffff00, #ffffff);
+      color: #121212;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .backdrop {
+        height: 60vh;
+        width: 100%;
+        mask-image: linear-gradient(to top transparent white 45&);
+        -webkit-mask-image: linear-gradient(to top, transparent, white 35%);
+      }
+
+      .movie-details-headline {
+        margin-top: -72px;
+      }
+      h2 {
+        font-family: "Poppins-Bd";
+        font-size: 1.75rem;
+        color: #121212;
+        opacity: 1;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+      }
+      .features {
+        padding: 5vw 5vw;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        .save-download-wrapper {
+          display: flex;
+          gap: 16px;
+        }
+      }
+
+      .key-infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+        ul {
+          display: flex;
+          gap: 24px;
+          li {
+            font-family: "Poppins-Rg";
+          }
+        }
+      }
+      p {
+        font-family: "Poppins-Rg";
+        font-size: 1rem;
+      }
+    }
+
+    .movie-details-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 5vw;
+      margin-bottom: 48px;
+
+      .overview-text-closed {
+        font-family: "Poppins-Rg";
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+      }
+      .overview-text-open {
+        font-family: "Poppins-Rg";
+        text-align: left;
+      }
+      h3 {
+        text-align: left;
+        font-family: "Poppins-Bd";
+        font-size: 1.25rem;
+        text-align: left;
+        width: 100%;
+      }
+      .inline-btn {
+        font-size: 1rem;
+        border: none;
+        background: none;
+        display: inline;
+        color: #fc2121;
+      }
+      span {
+        font-family: "Poppins-Bd";
+      }
+      .genres {
+        width: 100%;
+        font-family: "Poppins-Rg";
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+      }
+      .languages {
+        width: 100%;
+        font-family: "Poppins-Rg";
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+      }
+      .info-table {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+    }
+
+    .linkTo {
+      text-decoration: none;
+    }
+  }
+}
